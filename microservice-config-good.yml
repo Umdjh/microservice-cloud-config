@@ -13,7 +13,7 @@ spring:
     username: root
     password: root
     #mysql8版本以上的驱动包，需要指定以下时区
-    url: jdbc:mysql://localhost:3306/new?serverTimezone=GMT&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://49.234.3.24:3306/new?serverTimezone=GMT&characterEncoding=utf8&useSSL=true
     #    #mysql8版本以上指定新的驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
     #引入Druid数据源
@@ -60,7 +60,7 @@ eureka:
     registerWithEureka: true # 服务注册开关
     fetchRegistry: true # 服务发现开关
     serviceUrl: # 客户端(服务提供者)注册到哪一个Eureka Server服务注册中心，多个用逗号分隔
-      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/
+      defaultZone: http://49.234.3.24:6001/eureka/,http://49.234.3.24:6002/eureka/
   instance:
     instanceId: ${spring.application.name}:${server.port} # 指定实例ID,就不会显示主机名了
     preferIpAddress: true
@@ -75,7 +75,7 @@ spring:
     username: root
     password: root
     #mysql8版本以上的驱动包，需要指定以下时区
-    url: jdbc:mysql://localhost:3306/new?serverTimezone=GMT&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://49.234.3.24:3306/new?serverTimezone=GMT&characterEncoding=utf8&useSSL=true
     #    #mysql8版本以上指定新的驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
     #引入Druid数据源
@@ -122,7 +122,7 @@ eureka:
     registerWithEureka: true # 服务注册开关
     fetchRegistry: true # 服务发现开关
     serviceUrl: # 客户端(服务提供者)注册到哪一个Eureka Server服务注册中心，多个用逗号分隔
-      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/
+      defaultZone: http://49.234.3.24:6001/eureka/,http://49.234.3.24:6002/eureka/
   instance:
     instanceId: ${spring.application.name}:${server.port} # 指定实例ID,就不会显示主机名了
     preferIpAddress: true
