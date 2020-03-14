@@ -12,12 +12,12 @@ spring:
     
 eureka:
   instance:
-    hostname: eureka6001.com 
+    hostname: 47.97.251.24
   client:
     registerWithEureka: false 
     fetchRegistry: false 
     serviceUrl:
-      defaultZone: http://eureka6002.com:6002/eureka/
+      defaultZone: http://47.97.251.24:6002/eureka/
   server:
     enable-self-preservation: false # 禁用自我保护机制*****************
 ---
@@ -30,12 +30,12 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka6001.com 
+    hostname: 47.97.251.24
   client:
     registerWithEureka: false 
     fetchRegistry: false 
     serviceUrl:
-      defaultZone: http://eureka6002.com:6002/eureka/
+      defaultZone: http://47.97.251.24:6002/eureka/
 
   server:
     enable-self-preservation: true # 开启自我保护机制*****************
